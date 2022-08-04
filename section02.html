@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic 02 - 상세페이지</title>
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<style>
+    * {
+        outline: 1px dashed #9868c6;
+    }
+
+
+    .business {
+        padding: 100px 0;
+
+    }
+
+    .business h2 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .business h2::after {
+        content: "";
+        display: block;
+        font-size: 30px;
+        width: 60px;
+        height: 3px;
+        background: #0d6efd;
+        margin: 15px auto;
+    }
+
+    .business>p {
+        font-weight: 300;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+
+
+    .business .container img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .business figure {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .business figure~figure {
+        border-left: 1px solid transparent;
+    }
+
+    /* .business figure .cover {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 1);
+        color: #fff;
+        transition: left 0.15s;
+    }
+
+    .business figure:hover .cover {
+        left: calc(-100% + 100px);
+    }
+
+    .business figure:hover .inbox {
+        transition: 0.5s 0.3s;
+    }
+
+    .business figure:hover .inbox {
+        transform: translateX(100px);
+    } */
+
+    .business figure .cover {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        transition: left 0.15s;
+        padding: 40px 10px;
+    }
+
+    .business figure:hover .cover {
+        left: 0;
+    }
+
+    .business figure h3 {
+        align-self: stretch;
+        font-size: 21px;
+        font-weight: 500;
+        padding: 0 0 20px 0;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .business figure p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.25;
+    }
+
+    .business figure .cover a {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 10px 15px;
+        margin-top: auto;
+    }
+
+    .business .inner {
+        width: 1200px;
+        margin: 0 auto;
+        /* overflow: hidden; */
+    }
+
+    .business .inner::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .business .inner>div {
+        float: left;
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    .business .container {
+        margin: 0 auto 100px auto;
+    }
+
+    .business .tit strong {
+        position: relative;
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+        padding: 0 0 0 20px;
+    }
+
+    .business .tit p {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 0 0 0 20px;
+    }
+
+    .business .tit strong::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 80px;
+        background: #0d6efd;
+    }
+</style>
+
+<body>
+
+    <section class="business">
+
+        <h2><span class="mainColor">CEO's</span> GREETING</h2>
+        <P>새로운 미래를 열어가는 김혜림</P>
+
+
+        <div class="container">
+            <figure>
+                <div class="inbox">
+                    <img src="./img/collection02.jpg" alt="">
+                </div>
+
+                <div class="cover">
+                    <h3>주요사업 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium.</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/collection01.jpg" alt="">
+                </div>
+
+                <div class="cover">
+                    <h3>주요사업 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium.</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/collection04.jpg" alt="">
+                </div>
+
+                <div class="cover">
+                    <h3>주요사업 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium.</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+            <figure>
+                <div class="inbox">
+                    <img src="./img/collection03.jpg" alt="">
+                </div>
+
+                <div class="cover">
+                    <h3>주요사업 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, praesentium.</p>
+                    <a href="">자세히보기</a>
+                </div>
+            </figure>
+        </div>
+        <div class="inner">
+            <div class="tit">
+                <strong>심플하지만 다 가춘 화창한 팔월 삼일</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quis numquam aliquam sunt?</p>
+            </div>
+            <div class="list">
+                <ul class="dotList">
+                    <li>Lorem ipsum dolor sit,</li>
+                    <li>amet consectetur adipisicing elit.</li>
+                    <li> Nemo beatae eum repellat</li>
+                    <li>ipsam doloremque!</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+:root { --mc: #0d6efd
+ }
+
+
+
+.mainColor { color: #0d6efd; } 
+
+.basicSection { padding: 100px 0; } 
+
+
+.basicSection h2 { font-size: 30px; font-weight: 500; text-align: center; } 
+.basicSection h2::after { content: ""; display: block; font-size: 30px; width: 60px; height: 3px; background: #0d6efd; margin: 15px auto; } 
+
+.basicSection h2 span { color: var(--mc); } 
+
+.basicSection>p { font-weight: 300; margin: 0 0 50px 0; text-align: center; } 
+
+
+.container { display: flex; width: 1170px; gap: 30px; margin: 0 auto;}
+
+.inner { width: 1170px; margin: 0 auto; } 
+.inner::after {content: ""; display: block; clear: both;} 
+
+.dotList {padding: 0;}
+.dotList li { position: relative; padding: 0 0 0 20px; line-height: 1.25; margin: 0 0 5px 0; } 
+.dotList li::before { content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 2px; background: #0d6efd;}
+
+table { width: 100%; border-top: 2px solid #0d6efd; border-spacing: 0; border-collapse: collapse; } 
+table td { padding: 15px 15px; border-left: 1px solid #ddd; } 
+table th { text-align: left; background: #f7f7f7; font-weight: 400; } 
+table td~td { border-left: 1px solid #999;}
+table tr { border-bottom: 1px solid #ddd; } 
+
+.reponsive_table { width: 100%; /* overflow-x: scroll; */}
